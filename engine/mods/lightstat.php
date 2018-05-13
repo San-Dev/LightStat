@@ -201,7 +201,7 @@ var lightstat_interval = setInterval(function(){
 	$("#lightstat_sander").load(window.location.pathname + window.location.search + " #lightstat_sander");
 	lightstat_counter++;
 	if (lightstat_counter > <?= $mod['update_limit'] ?>) {
-		clreaInterval(lightstat_interval);
+		clearInterval(lightstat_interval);
 	}
 }, <?= $mod['update_time'] ?>000);
 </script>
